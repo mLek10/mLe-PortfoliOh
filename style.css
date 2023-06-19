@@ -1,0 +1,53 @@
+:root {
+    --dark-color: rgb(123, 35, 123);
+    --light-color: rgb(74, 212, 74);
+
+}
+
+body {
+    display: inline-block;
+    font-size: 32px;
+    font-display: var(--light-color);
+    font-family: sans-serif;
+
+}
+
+
+.active {
+    display: contents;
+    color:var(--light-color)
+}
+
+h1, h2 { 
+    text-align: center;
+    color: var(--light-color);
+    margin: inherit;
+
+
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+  }
+  
+  img:hover {
+    box-shadow: 0 0 10px 7px rgba(0, 140, 186, 0.5);
+  }
+
+  .heading {
+    display: flex
+  }
+
+  section {
+    width: 700px;
+    border: 15px solid green;
+    padding: 50px;
+    margin: 20px;
+    font-size: 20px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+
+  }
+  
