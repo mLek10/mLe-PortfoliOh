@@ -1,10 +1,11 @@
 :root {
-    --dark-color: rgb(123, 35, 123);
+    --dark-color: rgb(155, 55, 182);
     --light-color: rgb(74, 212, 74);
 
 }
 
 body {
+    background-color: var(--dark-color);
     display: inline-block;
     font-size: 32px;
     font-display: var(--light-color);
@@ -18,7 +19,7 @@ body {
     color:var(--light-color)
 }
 
-h1, h2 { 
+h1, h3 { 
     text-align: center;
     color: var(--light-color);
     margin: inherit;
@@ -28,8 +29,9 @@ h1, h2 {
 
 img {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 40%;
+    margin-top: 1%;
+    margin-bottom: 1%;
     width: 20%;
   }
   
@@ -37,11 +39,33 @@ img {
     box-shadow: 0 0 10px 7px rgba(0, 140, 186, 0.5);
   }
 
-  .heading {
-    display: flex
+  nav{
+    background-color: rgb(161, 69, 204);
+    padding: 20px;
+    position: sticky;
+    top: 5px;
+  }
+  nav ul{
+    white-space: nowrap;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  nav li{
+    width: 25%;
+    display: inline-block;
+    font-size: 24px;
   }
 
-  section {
+  main{
+    max-width: 100%;
+    width: 1200px;
+    margin: 80px auto;
+    padding: 0 40px;
+    box-sizing: border-box;
+  }
+
+
+  article {
     width: 700px;
     border: 15px solid green;
     padding: 50px;
