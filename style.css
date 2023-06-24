@@ -13,6 +13,10 @@ body {
 
 }
 
+.flex-container {
+  display: flex;
+}
+
 
 .active {
     display: contents;
@@ -65,13 +69,33 @@ img {
   }
 
 
-  article {
+  #about-me {
     width: 700px;
     border: 15px solid green;
     padding: 50px;
     margin: 20px;
     font-size: 20px;
+    line-height: 1.5em;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 
   }
+
+  #contact-me {
+    color: var(--light-color);
+    background-color:rgb(161, 69, 204);
+    text-align: center;
+  }
+
+  nav li a:hover{
+    text-decoration: underline;
+    background-color: forestgreen;
+  }
   
+  @media screen and (max-width: 600px) {
+    .flex-container {
+      display: block;
+    }
+    body {
+      background-color: aliceblue;
+    }
+  }
