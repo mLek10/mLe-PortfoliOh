@@ -6,32 +6,27 @@
 
 body {
     background-color: var(--dark-color);
-    display: inline-block;
     font-size: 32px;
     font-display: var(--light-color);
     font-family: sans-serif;
+}*/
 
-}
-
-.flex-container {
+/*.flex-container {
   display: flex;
-}
+  max-width: 1200;
+  width: 100%;
+  flex-wrap: nowrap
+}*/
 
 
-.active {
-    display: contents;
-    color:var(--light-color)
-}
-
-h1, h3 { 
+h1, h3, h6 { 
+    text-shadow: 2px 2px rgb(231, 39, 206);
     text-align: center;
     color: var(--light-color);
     margin: inherit;
-
-
 }
 
-img {
+.me {
     display: block;
     margin-left: 40%;
     margin-top: 1%;
@@ -39,15 +34,11 @@ img {
     width: 20%;
   }
   
-  img:hover {
-    box-shadow: 0 0 10px 7px rgba(0, 140, 186, 0.5);
-  }
 
   nav{
     background-color: rgb(161, 69, 204);
     padding: 20px;
-    position: sticky;
-    top: 5px;
+    
   }
   nav ul{
     white-space: nowrap;
@@ -58,22 +49,22 @@ img {
     width: 25%;
     display: inline-block;
     font-size: 24px;
+  
   }
 
-  main{
+ /* main{
     max-width: 100%;
     width: 1200px;
     margin: 80px auto;
     padding: 0 40px;
     box-sizing: border-box;
-  }
+  }*/
 
 
   #about-me {
-    width: 700px;
     border: 15px solid green;
     padding: 50px;
-    margin: 20px;
+    margin: 10px;
     font-size: 20px;
     line-height: 1.5em;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
@@ -90,10 +81,58 @@ img {
     text-decoration: underline;
     background-color: forestgreen;
   }
+
+  .image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .larger-image{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .smaller-image {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .larger-image {
+    width: 800px;
+  }
+
+  .smaller-image {
+    width: 200px;
+  }
+
+/*#bigcard a img {
+  display:block;
+  justify-content: center;
+  width: 600px;
+  height: 300px;
+  padding: 5px;
+  }
   
+  .images a img {
+    width: 300px;
+    height: 100px;
+    padding: 5px;
+  }*/
+
+  a img:hover {
+    box-shadow: 0 0 10px 7px rgba(0, 140, 186, 0.5);
+    cursor: grab;
+    opacity: 0.5;
+    transition:0.5s;
+  }
+
   @media screen and (max-width: 600px) {
     .flex-container {
       display: block;
+      justify-content: center;
     }
     body {
       background-color: aliceblue;
