@@ -6,8 +6,13 @@ My motivation for this project was to create a portfolio page to display the wor
 
 ## Usage
 
-Provide instructions and examples for use. Include screenshots as needed.
+When you click the navigation links or scroll down you will be brought to these images, you can click on the image and you will be redirected to that specific deployed site
 
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative file path, add it to your README using the following syntax:
+![alt text](challenge2usage.png)
 
-![alt text](assets/images/screenshot.png)
+##Screenshots
+
+Screenshots of my project for challenge 2
+![alt text](challenge2site.png)
+![alt text](challengesite2.png)
+![alt text](challengesite3.png)
