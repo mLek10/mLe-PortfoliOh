@@ -10,7 +10,7 @@ When you click the navigation links or scroll down you will be brought to these 
 
 ![alt text](challenge2usage.png)
 
-##Screenshots
+## Screenshots
 
 Screenshots of my project for challenge 2
 ![alt text](challenge2site.png)
