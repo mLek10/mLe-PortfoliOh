@@ -42,23 +42,27 @@ h1, h3, h4, h6 {
   }
   nav ul{
     white-space: nowrap;
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 0 auto;
+    padding-inline-start: 0%;
+    display: flex;
+    justify-content: center;
   }
+
   nav li{
-    width: 25%;
     display: inline-block;
-    font-size: 24px;
+    height: 100%;
+    padding: 10px;
+    width: 20%;
+    font-size: 22px;
   
   }
 
- /* main{
-    max-width: 100%;
-    width: 1200px;
-    margin: 80px auto;
-    padding: 0 40px;
-    box-sizing: border-box;
-  }*/
+  nav a {
+    text-align: center;
+    padding: 14px 16px;
+  }
+
 
 
   #about-me {
@@ -102,6 +106,10 @@ h1, h3, h4, h6 {
 
   .image-row{
     display: flex;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: auto;
+    justify-content: space-between;
   }
 
   .smaller-image {
@@ -111,22 +119,18 @@ h1, h3, h4, h6 {
   }
 
   .larger-image {
-    width: 800px;
+    width: 900px;
+    border-radius: 25px;
   }
 
   .smaller-image {
-    width: 400px;
-  }
-
-/*#bigcard a img {
-  display:block;
-  justify-content: center;
-  width: 600px;
-  height: 300px;
-  padding: 5px;
+    width: 445px;
+    margin-right: 5px;
+    margin-left: 5px;
+    border-radius: 25px;
   }
   
-  .images a img {
+  /*.images a img {
     width: 300px;
     height: 100px;
     padding: 5px;
@@ -139,10 +143,11 @@ h1, h3, h4, h6 {
     transition:0.5s;
   }
 
-  /*.last-image{
-    width: 600px;
-    margin-top: 5px;
-  }*/
+  #last-image{
+    width: 900px;
+    margin-top: 2px;
+    border-radius: 25px;
+  }
 
   footer{
     margin-top: 5px;
@@ -155,5 +160,10 @@ h1, h3, h4, h6 {
     }
     body {
       background-color: aliceblue;
+    }
+    nav {
+      display: block;
+      justify-content: center;
+      max-width: 600px;
     }
   }
