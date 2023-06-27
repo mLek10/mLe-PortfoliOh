@@ -1,79 +1,82 @@
 :root {
-    --dark-color: rgb(155, 55, 182);
-    --light-color: rgb(74, 212, 74);
+  --dark-color: rgb(155, 55, 182);
+  --light-color: rgb(74, 212, 74);
 }
 
 body {
-    background-color: var(--dark-color);
-    font-size: 32px;
-    font-display: var(--light-color);
-    font-family: sans-serif;
+  background-color: var(--dark-color);
+  font-size: 32px;
+  font-display: var(--light-color);
+  font-family: sans-serif;
 }
-
-h1, h3, h4, h6 { 
-    text-shadow: 2px 2px rgb(231, 39, 206);
-    text-align: center;
-    color: var(--light-color);
-    margin: inherit;
+/*styling the headers all the same*/
+h1,
+h3,
+h4,
+h6 {
+  text-shadow: 2px 2px rgb(231, 39, 206);
+  text-align: center;
+  color: var(--light-color);
+  margin: inherit;
 }
 
 .me {
-    display: block;
-    margin-left: 40%;
-    margin-top: 1%;
-    margin-bottom: 1%;
-    width: 20%;
-    border-radius: 50%;
-  }
-  
-nav{
-    background-color: rgb(161, 69, 204);
-    padding: 20px; 
+  display: block;
+  margin-left: 40%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  width: 20%;
+  border-radius: 50%;
+}
+/*styling nav*/
+nav {
+  background-color: rgb(161, 69, 204);
+  padding: 20px;
+}
+/*list nav bar horizontally*/
+nav ul {
+  white-space: nowrap;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-inline-start: 0%;
+  display: flex;
+  justify-content: center;
+}
+/*adjust links inside block*/
+nav li {
+  display: inline-block;
+  height: 100%;
+  padding: 10px;
+  width: 20%;
+  font-size: 22px;
 }
 
-  nav ul{
-    white-space: nowrap;
-    max-width: 1000px;
-    margin: 0 auto;
-    padding-inline-start: 0%;
-    display: flex;
-    justify-content: center;
-  }
-
-    nav li{
-      display: inline-block;
-      height: 100%;
-      padding: 10px;
-      width: 20%;
-      font-size: 22px;
-    }
-
-      nav a {
-       text-align: center;
-       padding: 14px 16px;
-      }
-
-      nav li a:hover{
-        text-decoration: underline;
-        background-color: forestgreen;
-      }
-
+nav a {
+  text-align: center;
+  padding: 14px 16px;
+}
+/*turn links green when cursor moves over top*/
+nav li a:hover {
+  text-decoration: underline;
+  background-color: forestgreen;
+}
+/*border and styling for about me section*/
 #about-me {
   border: 15px solid green;
   padding: 50px;
   margin: 10px;
   font-size: 20px;
   line-height: 1.5em;
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
-
+/*create column for images to sit in*/
 .image-container {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.larger-image{
+.larger-image {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -84,13 +87,13 @@ nav{
   border-radius: 25px;
 }
 
-.smaller-images{
+.smaller-images {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
-.image-row{
+/*getting my two smaller images to be side by side*/
+.image-row {
   display: flex;
   margin-top: 5px;
   margin-bottom: 5px;
@@ -105,42 +108,45 @@ nav{
   margin-left: 5px;
   border-radius: 25px;
 }
-
+/*styling to indicate images are links*/
 a img:hover {
   box-shadow: 0 0 10px 7px rgba(0, 140, 186, 0.5);
   cursor: grab;
   opacity: 0.5;
-  transition:0.5s;
+  transition: 0.5s;
 }
 
-#last-image{
+#last-image {
   width: 900px;
   margin-top: 2px;
   border-radius: 25px;
 }
 
-footer{
+footer {
   background-color: rgb(161, 69, 204);
   margin-top: 5px;
 }
 
-address{
+address {
   text-align: center;
 }
-
-  @media screen and (max-width: 768px) {
-    .image-container *{
-      display: block;
-      justify-content: center;
-      width: 100%;
-    }
-    body {
-      background-color: aliceblue;
-    }
-    nav{
-      display:none;
-    }
-    #last-image{
-      width: 100%;
-    }
+/*styling to make site compatible with smaller screen*/
+@media screen and (max-width: 768px) {
+  .image-container * {
+    display: block;
+    justify-content: center;
+    width: 100%;
   }
+
+  body {
+    background-color: aliceblue;
+  }
+
+  nav {
+    display: none;
+  }
+
+  #last-image {
+    width: 100%;
+  }
+}
